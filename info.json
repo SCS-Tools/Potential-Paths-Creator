@@ -1,18 +1,18 @@
 {
-  "uid": "d06e35d5b26d44dab70c14eda8183c12d06e35d5b26d44dab70c14eda8183c12",
+  "uid": "ppc-000000000000000000000000000000000000000000000000000000000000",
   "name": "Potential Paths Creator",
   "desc_ru": "Создаёт список потенциальных путей SCS из лога, файлов определений и дерева распакованных файлов.",
   "desc_en": "Builds a list of potential SCS paths from a log, definition files and an extracted file tree.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Lyonzyi_Leonid5",
   "category": "SCS Extractor",
   "icon": "icon.png",
+  "banner": "banner.png",
   "runtime": {
     "type": "html_python",
     "entry": "app.html",
     "logic": "logic.py",
     "timeout": 900,
     "resources": "potential_path_finder"
-  },
-  "banner": "banner.png"
+  }
 }

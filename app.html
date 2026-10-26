@@ -34,4 +34,4 @@ window.loadToolState=function(){if(toolBridge)toolBridge.run(JSON.stringify({act
 window.renderTool=function(data){if(data.status==='state'){const s=data.settings||{};$('log').value=s.log_path||'';$('source').value=s.source_folder||'';$('output').value=s.output_folder||'';$('filename').value=s.output_filename||'potential_paths.txt';ppcLog=Array.isArray(data.journal)&&data.journal.length?data.journal:[{key:'logReady'}];ppcRenderLog();return}ppcResult=data;ppcRenderResult(data,true)};
 function ppcRun(){const data={log_path:$('log').value.trim(),source_folder:$('source').value.trim(),output_folder:$('output').value.trim(),output_filename:$('filename').value.trim()};$('run').disabled=true;$('status').dataset.busy='1';$('status').textContent=t().working;ppcAddLog('scanStarted');setTimeout(()=>toolBridge.run(JSON.stringify(data)),20)}
 $('run').onclick=ppcRun;renderText();
-</script><script src="scroll_enhancements.js"></script></body></html>
+</script></body></html>
